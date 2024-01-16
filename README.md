@@ -23,3 +23,5 @@ npx tailwindcss init
 ```
 
 ## 🛠️ Trouble Shooting
+
+### Each child in a list should have a unique "key" prop.

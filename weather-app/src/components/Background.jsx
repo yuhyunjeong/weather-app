@@ -2,6 +2,7 @@ import React from "react";
 import City from "./City";
 import Inputs from "./Inputs";
 import TimeAndLocation from "./TimeAndLocation";
+import TemperatureAndDetails from "./TemperatureAndDetails";
 
 const Background = () => {
   return (
@@ -9,6 +10,7 @@ const Background = () => {
       <City />
       <Inputs />
       <TimeAndLocation />
+      <TemperatureAndDetails />
     </div>
   );
 };

@@ -3,6 +3,7 @@ import City from "./City";
 import Inputs from "./Inputs";
 import TimeAndLocation from "./TimeAndLocation";
 import TemperatureAndDetails from "./TemperatureAndDetails";
+import Forecast from "./Forecast";
 
 const Background = () => {
   return (
@@ -11,6 +12,8 @@ const Background = () => {
       <Inputs />
       <TimeAndLocation />
       <TemperatureAndDetails />
+      <Forecast title="hourly forecast" />
+      <Forecast title="daily forecast" />
     </div>
   );
 };

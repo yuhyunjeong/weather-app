@@ -1,10 +1,10 @@
 import "./App.css";
-import getWeatherData from "./api/weatherAPI";
+import getFormattedWeatherData from "./api/weatherAPI";
 import Background from "./components/Background";
 
 function App() {
   const fetchWeather = async () => {
-    const data = await getWeatherData("weather", { q: "seoul" });
+    const data = await getFormattedWeatherData("weather", { q: "seoul" });
     console.log(data);
   };
   fetchWeather();

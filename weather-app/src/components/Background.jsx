@@ -12,7 +12,7 @@ const Background = ({ weather }) => {
         <City />
         <Inputs />
         <TimeAndLocation weather={weather} />
-        <TemperatureAndDetails />
+        <TemperatureAndDetails weather={weather} />
         <Forecast title="hourly forecast" />
         <Forecast title="daily forecast" />
       </div>

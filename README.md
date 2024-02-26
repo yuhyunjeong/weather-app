@@ -2,6 +2,10 @@
 
 ## 💻 Process
 
+### weather API
+
+https://openweathermap.org/
+
 ## ✅ What I Learned
 
 ### Luxon

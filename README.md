@@ -34,6 +34,30 @@ npm install -D tailwindcss
 npx tailwindcss init
 ```
 
+<hr>
+
+### linear gradient with opacity
+
+```
+background: linear-gradient(
+    135deg, /* degree */
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+```
+
+### center the inner elements horizontally and vertically
+
+```
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* set to the full height of the screen */
+  margin: 0; /* remove default margin for body */
+}
+```
+
 ## 🛠️ Trouble Shooting
 
 ### Each child in a list should have a unique "key" prop.

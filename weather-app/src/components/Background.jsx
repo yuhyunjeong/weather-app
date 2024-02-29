@@ -9,8 +9,8 @@ const Background = ({ weather }) => {
   console.log("weather:", weather);
 
   return (
-    <div className="">
-      <div className="rounded-md mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-amber-200 to-orange-300 h-fit shadow-xl shadow-gray-400">
+    <div className="container">
+      <div className="display">
         <City />
         <Inputs />
         <TimeAndLocation weather={weather} />

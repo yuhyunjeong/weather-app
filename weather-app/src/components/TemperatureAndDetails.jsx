@@ -20,25 +20,24 @@ const TemperatureAndDetails = ({
 }) => {
   return (
     <div>
-      <div className="flex items-center justify-center py-6 text-lg text-yellow-100">
-        <p>{details}</p>
-      </div>
-
-      <div className="flex flex-row items-center justify-between text-white py-3">
-        <img alt="" src={iconUrlFromCode(icon)} className="w-20" />
-        <p className="text-5xl">{`${temp.toFixed()}º`}</p>
-        <div className="flex flex-col space-y-2">
-          <div className="flex font-light text-sm items-center justify-center">
+      <div className="temperature">
+        <p className="degree">{`${temp.toFixed()}º`}</p>
+        <p className="icon">
+          <img alt="" src={iconUrlFromCode(icon)} />
+        </p>
+        <p className="temp">{details}</p>
+        <div className="details">
+          <div className="real">
             <FaTemperatureThreeQuarters size={18} className="mr-1" />
             Real fell:
             <span className="font-medium ml-1">{`${feels_like.toFixed()}º`}</span>
           </div>
-          <div className="flex font-light text-sm items-center justify-center">
+          <div className="humidity">
             <SlDrop size={18} className="mr-1" />
             Humidity:
             <span className="font-medium ml-1">{`${humidity.toFixed()}%`}</span>
           </div>
-          <div className="flex font-light text-sm items-center justify-center">
+          <div className="wind">
             <SiWindicss size={18} className="mr-1" />
             Wind:
             <span className="font-medium ml-1">{`${speed.toFixed()}km/h`}</span>

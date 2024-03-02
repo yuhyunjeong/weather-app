@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 body {
   background-color: #fe90c5;
 
@@ -17,13 +19,21 @@ body {
   width: 312px;
   height: 605px;
 
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.3)
-  );
-
   border-radius: 20px;
+
+  border: 2px solid transparent;
+
+  background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.1)
+    ),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(254, 191, 222, 0.1));
+
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  box-shadow: 0px 4px 30px #ce6899; /* shadow */
 }
 
 .display {
@@ -64,16 +74,18 @@ body {
   justify-content: center;
 
   color: white;
-  font-size: 40px;
+  font-size: 30px;
+
+  font-family: "Inter", sans-serif;
 }
 .localTime {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  color: #fe90c5;
-  font-size: 15px;
-  font-weight: lighter;
+  color: #e16ca5;
+  font-size: 13px;
+  font-weight: 200;
 }
 
 .temperature {
@@ -84,7 +96,7 @@ body {
   display: flex;
   justify-content: center;
 
-  font-size: 50px;
+  font-size: 60px;
 }
 .icon {
   display: flex;
@@ -95,7 +107,7 @@ body {
   justify-content: center;
 
   font-size: x-large;
-  font-weight: lighter;
+  font-weight: 200;
 }
 .details {
   margin: 40px;

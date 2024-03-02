@@ -2,6 +2,48 @@
 
 ## 💻 Process
 
+### App.js
+
+entry point of the React app
+
+- useState hook
+
+  - manage weather data, search query, and units
+
+- useEffect hook
+
+  - fetch weather data whenever the component renders
+
+- renders the Background component and passes weather data as props
+
+### weatherAPI.js
+
+call the OpenWeatherMap API and format the response data
+
+- getWeatherData function
+
+  - call the API with the given API type and search parameters
+
+- formatCurrentWeather function
+
+  - format the current weather data
+
+- formatForecastWeather function
+
+  - format forecast data
+
+- getFormattedWeatherData function
+
+  - fetch and format current weather and forecast data
+
+- formatToLocalTime function
+
+  - convert UTC time to local time
+
+- iconUrlFromCode function
+
+  - generate an icon URL based on the weather icon code
+
 ### weather API
 
 https://openweathermap.org/
@@ -36,14 +78,22 @@ npx tailwindcss init
 
 <hr>
 
-### linear gradient with opacity
+### gradient border with border-radius
 
 ```
-background: linear-gradient(
-    135deg, /* degree */
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.3)
-  );
+border-radius: 20px;
+
+border: 2px solid rgba(255, 255, 255, 0.3);
+
+background-image: linear-gradient(
+      135deg, /* degree */
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0)
+  ), /* background */
+  linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(254, 191, 222, 0.6)); /* border */
+
+background-origin: border-box;
+background-clip: content-box, border-box;
 ```
 
 ### center the inner elements horizontally and vertically

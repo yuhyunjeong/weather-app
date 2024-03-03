@@ -28,19 +28,19 @@ const TemperatureAndDetails = ({
         <p className="temp">{details}</p>
         <div className="details">
           <div className="real">
-            <FaTemperatureThreeQuarters size={18} className="mr-1" />
+            <FaTemperatureThreeQuarters size={18} />
             Real fell:
-            <span className="font-medium ml-1">{`${feels_like.toFixed()}º`}</span>
+            <span>{`${feels_like.toFixed()}º`}</span>
           </div>
           <div className="humidity">
-            <SlDrop size={18} className="mr-1" />
+            <SlDrop size={18} />
             Humidity:
-            <span className="font-medium ml-1">{`${humidity.toFixed()}%`}</span>
+            <span>{`${humidity.toFixed()}%`}</span>
           </div>
           <div className="wind">
-            <SiWindicss size={18} className="mr-1" />
+            <SiWindicss size={18} />
             Wind:
-            <span className="font-medium ml-1">{`${speed.toFixed()}km/h`}</span>
+            <span>{`${speed.toFixed()}km/h`}</span>
           </div>
         </div>
       </div>

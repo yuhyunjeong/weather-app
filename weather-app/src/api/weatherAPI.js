@@ -6,7 +6,7 @@ const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 // https://api.openweathermap.org/data/2.5/onecall?lat=48.8534&lon=2.3488&exclude=current,minutely,hourly,alerts&appid=1fa9ff4126d95b8db54f3897a208e91c&units=metric
 
-// API call function
+// call API
 const getWeatherData = (infoType, searchParams) => {
   const url = new URL(BASE_URL + "/" + infoType);
   url.search = new URLSearchParams({ ...searchParams, appid: API_KEY });
@@ -17,6 +17,7 @@ const getWeatherData = (infoType, searchParams) => {
     .then((data) => data);
 };
 
+// format the current weather data
 const formatCurrentWeather = (data) => {
   const {
     coord: { lat, lon },
@@ -49,6 +50,7 @@ const formatCurrentWeather = (data) => {
   };
 };
 
+// format forecast data
 const formatForecastWeather = (data) => {
   let { timezone, daily, hourly } = data;
 
@@ -75,6 +77,7 @@ const formatForecastWeather = (data) => {
   return { timezone, daily, hourly };
 };
 
+// fetch and format current weather and forecast data
 const getFormattedWeatherData = async (searchParams) => {
   const formattedCurrentWeather = await getWeatherData(
     "weather",
@@ -93,13 +96,14 @@ const getFormattedWeatherData = async (searchParams) => {
   return { ...formattedCurrentWeather, ...formattedForecastWeather };
 };
 
+// convert UTC time to local time
 const formatToLocalTime = (
   secs,
   zone,
   format = "cccc, dd LLL yyyy' | Local time: 'hh:mm a"
 ) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
 
-// icon
+// icon URL based on the weather icon code
 const iconUrlFromCode = (code) =>
   `http://openweathermap.org/img/wn/${code}@2x.png`;
 

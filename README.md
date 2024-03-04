@@ -20,30 +20,6 @@ entry point of the React app
 
 call the OpenWeatherMap API and format the response data
 
-- getWeatherData function
-
-  - call the API with the given API type and search parameters
-
-- formatCurrentWeather function
-
-  - format the current weather data
-
-- formatForecastWeather function
-
-  - format forecast data
-
-- getFormattedWeatherData function
-
-  - fetch and format current weather and forecast data
-
-- formatToLocalTime function
-
-  - convert UTC time to local time
-
-- iconUrlFromCode function
-
-  - generate an icon URL based on the weather icon code
-
 ### weather API
 
 https://openweathermap.org/

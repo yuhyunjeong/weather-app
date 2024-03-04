@@ -28,7 +28,7 @@ body {
       rgba(183, 107, 245, 0.8),
       rgba(255, 255, 255, 0.3)
     ),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(254, 191, 222, 0.1));
+    linear-gradient(135deg, rgba(183, 107, 245, 0.1), rgba(254, 191, 222, 0.5));
 
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -84,7 +84,7 @@ body {
   align-items: center;
 
   color: #ffffff;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 200;
 }
 
@@ -107,7 +107,7 @@ body {
   justify-content: center;
 
   font-size: x-large;
-  font-weight: 200;
+  font-weight: 300;
 }
 .details {
   margin: 40px;
@@ -120,6 +120,7 @@ body {
   align-items: center;
 
   font-size: medium;
+  font-weight: 300;
 }
 
 .real svg,
@@ -132,6 +133,5 @@ body {
 .real span,
 .humidity span,
 .wind span {
-  font-weight: 500; /* Equivalent to font-medium */
-  margin-left: 0.25rem; /* Equivalent to ml-1 */
+  margin-left: 0.5rem; /* Equivalent to ml-1 */
 }

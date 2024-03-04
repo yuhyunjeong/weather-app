@@ -97,11 +97,8 @@ const getFormattedWeatherData = async (searchParams) => {
 };
 
 // convert UTC time to local time
-const formatToLocalTime = (
-  secs,
-  zone,
-  format = "cccc, dd LLL yyyy' | Local time: 'hh:mm a"
-) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
+const formatToLocalTime = (secs, zone, format = "'Local time: 'hh:mm a") =>
+  DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
 
 // icon URL based on the weather icon code
 const iconUrlFromCode = (code) =>

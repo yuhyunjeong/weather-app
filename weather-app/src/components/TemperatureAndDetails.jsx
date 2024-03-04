@@ -29,7 +29,7 @@ const TemperatureAndDetails = ({
         <div className="details">
           <div className="real">
             <FaTemperatureThreeQuarters size={18} />
-            Real fell:
+            Real feel:
             <span>{`${feels_like.toFixed()}º`}</span>
           </div>
           <div className="humidity">

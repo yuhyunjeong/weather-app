@@ -20,8 +20,6 @@ entry point of the React app
 
 call the OpenWeatherMap API and format the response data
 
-### weather API
-
 https://openweathermap.org/
 
 ## ✅ What I Learned
@@ -63,8 +61,8 @@ border: 2px solid rgba(255, 255, 255, 0.3);
 
 background-image: linear-gradient(
       135deg, /* degree */
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0)
+      rgba(183, 107, 245, 0.8),
+      rgba(255, 255, 255, 0.3)
   ), /* background */
   linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(254, 191, 222, 0.6)); /* border */
 

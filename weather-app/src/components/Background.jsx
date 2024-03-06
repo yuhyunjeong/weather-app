@@ -5,14 +5,14 @@ import TimeAndLocation from "./TimeAndLocation";
 import TemperatureAndDetails from "./TemperatureAndDetails";
 import Forecast from "./Forecast";
 
-const Background = ({ weather }) => {
+const Background = ({ weather, setQuery, units, setUnits }) => {
   console.log("weather:", weather);
 
   return (
     <div className="container">
       <div className="display">
-        <City />
-        <Inputs />
+        <City setQuery={setQuery} />
+        <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
         <TimeAndLocation weather={weather} />
         <TemperatureAndDetails weather={weather} />
       </div>

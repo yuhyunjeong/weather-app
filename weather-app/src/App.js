@@ -2,6 +2,7 @@ import "./App.css";
 import getFormattedWeatherData from "./api/weatherAPI";
 import Background from "./components/Background";
 import { useState, useEffect } from "react";
+import City from "./components/City";
 
 function App() {
   const [query, setQuery] = useState({ q: "seoul" });
@@ -19,7 +20,16 @@ function App() {
   }, [query, units]);
 
   return (
-    <div className="App">{weather && <Background weather={weather} />}</div>
+    <div className="App">
+      {weather && (
+        <Background
+          weather={weather}
+          setQuery={setQuery}
+          units={units}
+          setUnits={setUnits}
+        />
+      )}
+    </div>
   );
 }
 

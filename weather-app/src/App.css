@@ -64,6 +64,14 @@ body {
 .search-icon,
 .location-icon {
   color: white;
+  font-size: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+
+.search-icon:hover,
+.location-icon:hover {
+  transform: scale(1.25);
 }
 
 .time {

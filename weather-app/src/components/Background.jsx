@@ -3,7 +3,6 @@ import City from "./City";
 import Inputs from "./Inputs";
 import TimeAndLocation from "./TimeAndLocation";
 import TemperatureAndDetails from "./TemperatureAndDetails";
-import Forecast from "./Forecast";
 
 const Background = ({ weather, setQuery, units, setUnits }) => {
   console.log("weather:", weather);

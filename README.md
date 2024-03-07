@@ -101,3 +101,20 @@ Solution:
     });
   }
 ```
+
+### Uncaught runtime errors: Cannot read properties of undefined (reading 'lat')
+
+Solution: try-catch block for error handling
+
+```
+  const handleSearchClick = async () => {
+    try {
+      if (city !== "") {
+        await getFormattedWeatherData({ q: city, units });
+        setQuery({ q: city });
+      }
+    } catch (error) {
+      alert("Please check spelling or space.");
+    }
+  };
+```

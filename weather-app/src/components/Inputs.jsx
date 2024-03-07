@@ -19,13 +19,23 @@ const Inputs = ({ setQuery, units, setUnits }) => {
 
   return (
     <div className="search">
+      <label htmlFor="inputField" className="sr-only">
+        Input:
+      </label>
       <input
+        id="inputField"
         type="text"
         className="input"
         onChange={(e) => setCity(e.currentTarget.value)}
       />
-      <IoSearch size={25} className="search-icon" onClick={handleSearchClick} />
-      <FaLocationDot size={25} className="location-icon" />
+
+      <IoSearch
+        size={25}
+        className="search-icon"
+        onClick={handleSearchClick}
+        aria-label="Search Icon"
+      />
+      {/*<FaLocationDot size={25} className="location-icon" />*/}
     </div>
   );
 };

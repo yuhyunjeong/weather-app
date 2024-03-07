@@ -59,8 +59,25 @@ body {
   margin: 20px;
 }
 .input {
+  width: 190px;
   border-radius: 20px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  text-indent: 15px; /* indentation */
+  color: #ce6899;
+  caret-color: #ce6899; /* color of cursor */
 }
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
 .search-icon,
 .location-icon {
   color: white;

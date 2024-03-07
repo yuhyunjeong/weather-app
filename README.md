@@ -1,4 +1,16 @@
-# weather-app
+# 🌦️ weather app
+
+you can try it here! : https://yuhyunjeong.github.io/weather-app/
+
+![Alt text](weatherapp_1.gif)
+
+### Next Challenge
+
+- current location
+- check local time
+- customize alert
+- change color by weather
+- customize icon
 
 ## 💻 Process
 
@@ -80,6 +92,59 @@ body {
   height: 100vh; /* set to the full height of the screen */
   margin: 0; /* remove default margin for body */
 }
+```
+
+### indentation and color of cursor in input box
+
+```
+.input {
+
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  text-indent: 15px; /* indentation */
+  color: #ce6899;
+  caret-color: #ce6899; /* color of cursor */
+}
+```
+
+<hr>
+
+### deploy a React app to GitHub Pages
+
+- Add a homepage field to package.json file
+
+```
+// package.json
+{
+  "name": "weather-app",
+  "version": "0.1.0",
+  "homepage": "https://yuhyunjeong.github.io/weather-app/",
+  // other configurations
+}
+```
+
+- Install the gh-pages package
+
+```
+npm install gh-pages --save-dev
+```
+
+- Add a deployment script to package.json file
+
+```
+// package.json
+{
+  "scripts": {
+    "deploy": "npm run build && gh-pages -d build"
+  }
+}
+```
+
+- Run the deployment
+
+```
+npm run deploy
 ```
 
 ## 🛠️ Trouble Shooting

@@ -4,13 +4,15 @@ you can try it here! : https://yuhyunjeong.github.io/weather-app/
 
 ![Alt text](weatherapp_1.gif)
 
+Figma : <br>
+https://www.figma.com/file/1CsHZrA3LhltFqIjDFZghQ/weather-app?type=design&node-id=0%3A1&mode=design&t=8t8ek0dOK6QGqVHS-1
+
 ### Next Challenge
 
 - current location
 - check local time
 - customize alert
 - change color by weather
-- customize icon
 
 ## 💻 Process
 
